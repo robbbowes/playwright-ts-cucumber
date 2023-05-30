@@ -12,6 +12,7 @@
 /e2e/reports/screenshots/*.png
 /e2e/reports/videos/**/*.webm
 /e2e/reports/*.html
+/e2e/reports/*.json
 
 # production
 /build

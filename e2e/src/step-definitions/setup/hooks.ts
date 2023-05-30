@@ -5,11 +5,9 @@ import {
   ITestCaseHookParameter,
 } from "@cucumber/cucumber";
 import { ScenarioWorld } from "./world";
-import { env } from "../../env/parseEnv";
+import { env, envNumber } from "../../env/parseEnv";
 
-const DEFAULT_TIMEOUT = 10000;
-
-setDefaultTimeout(DEFAULT_TIMEOUT);
+setDefaultTimeout(envNumber('SCRIPT_TIMEOUT'));
 
 Before(async function (this: ScenarioWorld, scenario: ITestCaseHookParameter) {
   console.log(`********** ${scenario.pickle.name} **********`);

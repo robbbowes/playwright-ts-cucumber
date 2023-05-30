@@ -5,15 +5,21 @@ import { ScenarioWorld } from "../setup/world";
 import { waitFor } from "../../support/wait-for-behaviour";
 
 Then(
-  /^the "([^"]*)" should be displayed$/,
-  async function (this: ScenarioWorld, elementKey: ElementKey) {
+  /^the "([^"]*)" should contain the text "(.*)"$/,
+  async function (
+    this: ScenarioWorld,
+    elementKey: ElementKey,
+    expectedElementText: string
+  ) {
     const {
       screen: { page },
       globalVariables,
       globalConfig,
     } = this;
 
-    console.log(`the ${elementKey} should be displayed`);
+    console.log(
+      `the ${elementKey} should contain the text ${expectedElementText}`
+    );
 
     const elementIdentifier = getElementLocator(
       page,
@@ -23,8 +29,8 @@ Then(
     );
 
     await waitFor(async () => {
-      const isElementVIsible = (await page.$(elementIdentifier)) != null;
-      return isElementVIsible;
+      const elementText = await page.textContent(elementIdentifier);
+      return elementText?.includes(expectedElementText)
     });
   }
 );
