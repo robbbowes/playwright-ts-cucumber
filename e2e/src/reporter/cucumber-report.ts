@@ -1,8 +1,8 @@
-import report, { Options } from 'cucumber-html-reporter'
-import { env } from '../env/parseEnv'
-import dotenv from "dotenv";
+import dotenv from 'dotenv';
+import reporter, { Options } from 'cucumber-html-reporter';
+import { env } from '../env/parseEnv';
 
-dotenv.config({ path: env("COMMON_CONFIG_FILE") });
+dotenv.config({ path: env('COMMON_CONFIG_FILE') });
 
 const options: Options = {
     theme: 'bootstrap',
@@ -11,9 +11,7 @@ const options: Options = {
     screenshotsDirectory: env('SCREENSHOT_PATH'),
     storeScreenshots: true,
     reportSuiteAsScenarios: true,
-    launchReport: false
-}
+    launchReport: false,
+};
 
-console.log("I run <-------------------")
-
-report.generate(options)
+reporter.generate(options);
