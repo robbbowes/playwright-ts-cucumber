@@ -13,18 +13,12 @@ Then(
   ) {
     const {
       screen: { page },
-      globalVariables,
       globalConfig,
     } = this;
-
-    console.log(
-      `the ${elementKey} should contain the text ${expectedElementText}`
-    );
 
     const elementIdentifier = getElementLocator(
       page,
       elementKey,
-      globalVariables,
       globalConfig
     );
 

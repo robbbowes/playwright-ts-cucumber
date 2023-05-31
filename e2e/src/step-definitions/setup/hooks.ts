@@ -3,11 +3,12 @@ import {
   After,
   setDefaultTimeout,
   ITestCaseHookParameter,
+  BeforeStep,
 } from "@cucumber/cucumber";
 import { ScenarioWorld } from "./world";
 import { env, envNumber } from "../../env/parseEnv";
 
-setDefaultTimeout(envNumber('SCRIPT_TIMEOUT'));
+setDefaultTimeout(envNumber("SCRIPT_TIMEOUT"));
 
 Before(async function (this: ScenarioWorld, scenario: ITestCaseHookParameter) {
   console.log(`********** ${scenario.pickle.name} **********`);
@@ -39,3 +40,5 @@ After(async function (this: ScenarioWorld, scenario: ITestCaseHookParameter) {
   await browser.close();
   return browser;
 });
+
+BeforeStep(async ({ pickleStep }) => console.log(pickleStep.text));
