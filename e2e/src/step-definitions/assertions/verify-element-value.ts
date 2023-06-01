@@ -7,20 +7,11 @@ import { waitFor } from "../../support/wait-for-behaviour";
 Then(
   /^the "([^"]*)" should contain the text "(.*)"$/,
   async function (
-    this: ScenarioWorld,
-    elementKey: ElementKey,
-    expectedElementText: string
+    this: ScenarioWorld, elementKey: ElementKey, expectedElementText: string
   ) {
-    const {
-      screen: { page },
-      globalConfig,
-    } = this;
+    const { screen: { page }, globalConfig } = this;
 
-    const elementIdentifier = getElementLocator(
-      page,
-      elementKey,
-      globalConfig
-    );
+    const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
 
     await waitFor(async () => {
       const elementText = await page.textContent(elementIdentifier);
@@ -28,3 +19,19 @@ Then(
     });
   }
 );
+
+Then(
+  /^the "([^"]*)" should equal the text "(.*)"$/,
+  async function (
+    this: ScenarioWorld, elementKey: ElementKey, expectedElementText: string
+  ) {
+    const { screen: { page }, globalConfig } = this;
+
+    const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
+
+    await waitFor(async () => {
+      const elementText = await page.textContent(elementIdentifier);
+      return expectedElementText === elementText 
+    });
+  }
+)

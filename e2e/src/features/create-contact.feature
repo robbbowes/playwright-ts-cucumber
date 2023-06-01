@@ -17,9 +17,9 @@ Feature: As a user I expect to be able to create contacts
 
         When I fill in the "search" input with "Uncle Ted"
         Then the "full name label" should contain the text "Name:"
-        And the "name" should contain the text "Uncle Ted"
+        And the "name" should equal the text "Uncle Ted"
         And the "gender label" should contain the text "Gender:"
-        And the "gender" should contain the text "Male"
+        And the "gender" should equal the text "Male"
         And the "address label" should contain the text "Address:"
         And the "address" should contain the text "123 Fake Street"
         And the "address" should contain the text "Faketown"

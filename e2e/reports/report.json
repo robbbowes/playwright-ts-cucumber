@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 974116100
+              "duration": 1585038099
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1125278099
+              "duration": 1244693699
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 182098099
+              "duration": 273371898
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1587398
+              "duration": 1369299
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 12348499
+              "duration": 13208499
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 65345399
+              "duration": 81543598
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 55088799
+              "duration": 91679700
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 42714499
+              "duration": 69496500
             }
           },
           {
@@ -118,7 +118,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 39696499
+              "duration": 65055798
             }
           },
           {
@@ -131,7 +131,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 33679199
+              "duration": 68409198
             }
           },
           {
@@ -144,7 +144,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 132901899
+              "duration": 170646999
             }
           },
           {
@@ -157,7 +157,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1083199
+              "duration": 859999
             }
           },
           {
@@ -170,7 +170,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 46952298
+              "duration": 61846999
             }
           },
           {
@@ -183,20 +183,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6748099
+              "duration": 14417098
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 20,
-            "name": "the \"name\" should contain the text \"Uncle Ted\"",
+            "name": "the \"name\" should equal the text \"Uncle Ted\"",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:7"
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:23"
             },
             "result": {
               "status": "passed",
-              "duration": 6383598
+              "duration": 5807999
             }
           },
           {
@@ -209,20 +209,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6718698
+              "duration": 4753898
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 22,
-            "name": "the \"gender\" should contain the text \"Male\"",
+            "name": "the \"gender\" should equal the text \"Male\"",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:7"
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:23"
             },
             "result": {
               "status": "passed",
-              "duration": 4342098
+              "duration": 6423998
             }
           },
           {
@@ -235,7 +235,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6567299
+              "duration": 5710798
             }
           },
           {
@@ -248,7 +248,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4418799
+              "duration": 7947799
             }
           },
           {
@@ -261,7 +261,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3612599
+              "duration": 5164800
             }
           },
           {
@@ -274,7 +274,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9015698
+              "duration": 15856698
             }
           },
           {
@@ -287,7 +287,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7113299
+              "duration": 8915000
             }
           },
           {
@@ -295,7 +295,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 482925099
+              "duration": 368665500
             }
           }
         ],
