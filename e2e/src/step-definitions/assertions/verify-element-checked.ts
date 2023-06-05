@@ -5,15 +5,15 @@ import { ScenarioWorld } from "../setup/world";
 import { waitFor } from "../../support/wait-for-behaviour";
 
 Then(
-  /^the "([^"]*)" should( not)? be displayed$/,
+  /^the "([^"]*)" radio button should( not)? be checked$/,
   async function (this: ScenarioWorld, elementKey: ElementKey, negate: boolean) {
     const { screen: { page }, globalConfig } = this;
 
-    const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
+    const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
 
     await waitFor(async () => {
-      const isElementVIsible = (await page.$(elementIdentifier)) != null;
-      return isElementVIsible === !negate;
-    });
+        const isElementChecked = await page.isChecked(elementIdentifier)
+        return isElementChecked === !negate
+    })
   }
 );

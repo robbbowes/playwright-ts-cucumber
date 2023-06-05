@@ -9,5 +9,6 @@
     "address label": "[data-id='address-label']",
     "address": "[data-id='address']",
     "edit button": "[data-id='edit-button']",
-    "delete button": "[data-id='delete-button']"
+    "delete button": "[data-id='delete-button']",
+    "contact": "[data-id='contact']"
 }

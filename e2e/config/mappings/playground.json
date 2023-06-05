@@ -1,0 +1,9 @@
+{
+    "female": "input[value='female']",
+    "female radio button label": "label[data-id='female-radio-button']",
+    "male": "input[value='male']",
+    "male radio button label": "label[data-id='male-radio-button']",
+    "movies autocomplete": "input#movies-input",
+    "The Godfather": "//li[text()='The Godfather']",
+    "outlined required": "input#outlined-required"
+}
