@@ -1,18 +1,10 @@
-import playwright, {
-  Browser,
-  BrowserContextOptions,
-  BrowserContext,
-  BrowserType,
-  Page,
-} from "playwright";
+import playwright, { Browser, BrowserContextOptions, BrowserContext, BrowserType, Page } from "playwright";
 import { World, IWorldOptions, setWorldConstructor } from "@cucumber/cucumber";
 import { env } from "../../env/parseEnv";
 import { GlobalConfig } from "../../env/global";
 
 export type Screen = {
-  browser: Browser;
-  context: BrowserContext;
-  page: Page;
+  browser: Browser; context: BrowserContext; page: Page;
 };
 
 export class ScenarioWorld extends World {

@@ -8,7 +8,7 @@ import { inputValue, selectValue } from "../support/html-behaviour";
 Then(
   /^I fill in the "([^"]*)" input with "([^"]*)"$/,
   async function (this: ScenarioWorld, elementKey: ElementKey, input: string) {
-    this.parameters;
+    // this.parameters;
     const {
       screen: { page },
       globalConfig,

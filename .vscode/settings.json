@@ -2,6 +2,6 @@
     "cucumberautocomplete.steps": ["./e2e/src/step-definitions/**/*.ts"],
     "cucumberautocomplete.syncfeatures": "./e2e/src/features/*.feature",
     "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     }
 }

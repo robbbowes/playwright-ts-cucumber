@@ -1,10 +1,4 @@
-import {
-  Before,
-  After,
-  setDefaultTimeout,
-  ITestCaseHookParameter,
-  BeforeStep,
-} from "@cucumber/cucumber";
+import { Before, After, setDefaultTimeout, ITestCaseHookParameter, BeforeStep } from "@cucumber/cucumber";
 import { ScenarioWorld } from "./world";
 import { env, envNumber } from "../../env/parseEnv";
 
@@ -24,9 +18,7 @@ Before(async function (this: ScenarioWorld, scenario: ITestCaseHookParameter) {
 });
 
 After(async function (this: ScenarioWorld, scenario: ITestCaseHookParameter) {
-  const {
-    screen: { page, browser },
-  } = this;
+  const { screen: { page, browser } } = this;
 
   const scenarioStatus = scenario.result?.status;
 

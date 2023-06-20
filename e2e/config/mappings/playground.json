@@ -5,5 +5,15 @@
     "male radio button label": "label[data-id='male-radio-button']",
     "movies autocomplete": "input#movies-input",
     "The Godfather": "//li[text()='The Godfather']",
-    "outlined required": "input#outlined-required"
+    "outlined required": "input#outlined-required",
+    "outlined disabled": "input#outlined-disabled",
+    "outlined readonly": "input#outlined-read-only-input",
+    "outlined error label": "#outlined-error-helper-text-label",
+    "outlined error text": "#outlined-error-helper-text-helper-text",
+    "blue": "input[data-id='blue-radio-button']",
+    "purple": "input[data-id='purple-radio-button']",
+    "green": "input[data-id='green-radio-button']",
+    "grey": "input[data-id='grey-radio-button']",
+    "red": "input[data-id='red-radio-button']",
+    "basic": "iframe#basic-iframe"
 }

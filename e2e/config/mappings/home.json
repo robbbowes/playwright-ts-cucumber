@@ -1,7 +1,6 @@
 {
     "contacts header": "[data-id='contacts']",
     "create": "[data-id='add-button']",
-    "search": "[data-id='search']",
     "full name label": "[data-id='full-name-label']",
     "name": "[data-id='name']",
     "gender label": "[data-id='gender-label']",

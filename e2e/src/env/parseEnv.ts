@@ -4,7 +4,7 @@ export const env = (key: string): string => {
     if (!value) {
         throw Error(`No environment variable found for ${key}`)
     }
-    
+
     return value
 }
 

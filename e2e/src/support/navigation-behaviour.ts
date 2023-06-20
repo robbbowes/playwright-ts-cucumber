@@ -1,11 +1,7 @@
 import { Page } from "playwright";
 import { GlobalConfig, PageId } from "../env/global";
 
-export const navigateToPage = async (
-  page: Page,
-  pageId: PageId,
-  { pagesConfig, hostsConfig }: GlobalConfig
-): Promise<void> => {
+export const navigateToPage = async (page: Page, pageId: PageId, { pagesConfig, hostsConfig }: GlobalConfig): Promise<void> => {
   const { UI_AUTOMATION_HOST: hostName = "localhost" } = process.env;
 
   const hostPath = hostsConfig[`${hostName}`];
@@ -19,11 +15,7 @@ export const navigateToPage = async (
   await page.goto(url.href);
 };
 
-const pathMatchesPageId = (
-  path: string,
-  pageId: PageId,
-  { pagesConfig }: GlobalConfig
-): boolean => {
+const pathMatchesPageId = (path: string, pageId: PageId, { pagesConfig }: GlobalConfig): boolean => {
   const pageRegexString = pagesConfig[pageId].regex;
 
   const pageRegex = new RegExp(pageRegexString);
@@ -31,20 +23,13 @@ const pathMatchesPageId = (
   return pageRegex.test(path);
 };
 
-export const currentPathMatchesPageId = (
-  page: Page,
-  pageId: PageId,
-  globalConfig: GlobalConfig
-): boolean => {
+export const currentPathMatchesPageId = (page: Page, pageId: PageId, globalConfig: GlobalConfig): boolean => {
   const { pathname: currentPath } = new URL(page.url());
 
   return pathMatchesPageId(currentPath, pageId, globalConfig);
 };
 
-export const getCurrentPageId = (
-  page: Page,
-  globalConfig: GlobalConfig
-): PageId => {
+export const getCurrentPageId = (page: Page, globalConfig: GlobalConfig): PageId => {
   const { pagesConfig } = globalConfig;
 
   const pageConfigPagesIds = Object.keys(pagesConfig);

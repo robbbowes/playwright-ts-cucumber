@@ -39,6 +39,7 @@ export class BasicValidation extends React.Component {
                             <TextField
                                 error
                                 data-id="validation-input-two"
+                                playwright-id="basic-validation-error"
                                 id="outlined-error-helper-text"
                                 label="Error"
                                 defaultValue="Testing Talks Online"
